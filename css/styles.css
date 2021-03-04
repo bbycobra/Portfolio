@@ -1,0 +1,31 @@
+.title{
+    margin: 1rem 0;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 30px;
+}
+p,
+.list-group-item{
+    font-family: 'Roboto', sans-serif;
+}
+.main-font,
+.card-text{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+.navbar{
+    font-family: 'Bubblegum Sans', cursive;
+}
+svg{
+    fill:white;
+}
+svg:hover{
+    fill:purple;
+}
+.footer-font{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 20px;
+}
+.carousel.slide{
+    /* min-width: 200px; */
+    /* max-width: 600px; */
+}
