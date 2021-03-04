@@ -1,31 +1,26 @@
 .title{
     margin: 1rem 0;
-    font-family: 'Bubblegum Sans', cursive;
-    font-size: 30px;
 }
 p,
 .list-group-item{
     font-family: 'Roboto', sans-serif;
 }
+.header-btn {
+    background-color: white;
+    
+}
+.header-btn:hover {
+    background-color: #E3E3E3;
+}
 .main-font,
 .card-text{
     font-family: 'Amatic SC', cursive;
-    font-size: 30px;
+    font-size: 25px;
 }
-.navbar{
+.carousel.slide img{
+    filter: brightness(0.75);
+}
+.secondary-font{
     font-family: 'Bubblegum Sans', cursive;
-}
-svg{
-    fill:white;
-}
-svg:hover{
-    fill:purple;
-}
-.footer-font{
-    font-family: 'Bubblegum Sans', cursive;
-    font-size: 20px;
-}
-.carousel.slide{
-    /* min-width: 200px; */
-    /* max-width: 600px; */
+    font-size: 25px;
 }
