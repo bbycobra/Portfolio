@@ -32,7 +32,7 @@
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="#resume">Resume</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contact</a>
@@ -50,11 +50,12 @@
       <div class="card text-white bg-dark rounded mx-auto">
         <div class="card-body text-center">
           <img src="./images/profile_picture.png" class="rounded img-fluid" width="227px" height="235">
-          <div class="title secondary-font">Maritza T.</div>
+          <div class="main-title secondary-font">Maritza T.</div>
           <p class="card-text">Psychologist</p>
           <p class="card-text">Front-end Web Developer</p>
           <div class="container">
-            <a href="https://www.linkedin.com/in/maritzatorres19/" target="_blank" class=" btn header-btn btn-light btn-sm m-1">
+            <a href="https://www.linkedin.com/in/maritzatorres19/" target="_blank"
+              class=" btn header-btn btn-light btn-sm m-1">
               <svg id="Bold" enable-background="new 0 0 24 24" height="21" viewBox="0 0 24 24" width="21"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -114,142 +115,408 @@
     <!--/header card-->
 
     <!--about-->
-    <div class="pb-3">
-      <div class="about_text">
+    <div class="list-group col-lg-12 pb-3">
+      <div class="main-content">
         <div class="main-font">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="black" class="bi bi-person-square" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="black" class="bi bi-person-square"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
           </svg> About Myself
         </div>
-        <p><strong>A skilled and enthusiastic fellow human being born in the Dominican Republic with vast knowledge and
+        <p class="pb-3"><strong>A skilled and enthusiastic fellow human being born in the Dominican Republic with vast
+            knowledge and
             experience in people-oriented jobs.</strong>
         </p>
-        <div class="list-group col-lg-7"> 
-          <div class="main-font"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="black" class="bi bi-tools" viewBox="0 0 16 16">
-              <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+
+        <!--experience and education-->
+        <div id="resume">
+          <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item " role="presentation">
+              <button class="nav-link active" id="pills-experience-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience"
+                aria-selected="true">Experience</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
+                type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+            </li>
+          </ul>
+          <div class="tab-content pb-3" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-experience" role="tabpanel"
+              aria-labelledby="pills-experience-tab">
+              <div class="main-timeline">
+                <!-- start experience section-->
+                <div class="timeline">
+                  <div class="icon"></div>
+                  <div class="date-content">
+                    <div class="date-outer">
+                      <span class="date">
+                        <span class="month">1 Year</span>
+                        <span class="year">2018</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="timeline-content">
+                    <h5 class="title">ESL Teacher</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="description list-group-item">
+                        Supervised and taught English to young kids between the ages of 5-10 years old online.
+                      </li>
+                      <li class="description list-group-item">
+                        Instructed students using textbooks, worksheets, games, and visuals to help improve reading,
+                        writing, speaking, and listening skills.
+                      </li>
+                      <li class="description list-group-item">
+                        Evaluated student progress and comprehension and communicated with students and families to
+                        report status.
+
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end experience section-->
+
+                <!-- start experience section-->
+                <div class="timeline">
+                  <div class="icon"></div>
+                  <div class="date-content">
+                    <div class="date-outer">
+                      <span class="date">
+                        <span class="month">1 Year</span>
+                        <span class="year">2017</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="timeline-content">
+                    <h5 class="title">Corporate Trainer</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="description list-group-item">
+                        Trained and supervised new employees in the Fiserv product (CLOVER).
+                      </li>
+                      <li class="description list-group-item">
+                        Guided new hires assimilate into workforce and get up to speed on procedures with successful
+                        onboarding processes.
+                      </li>
+                      <li class="description list-group-item">
+                        Maintained materials, curriculum, and classroom spaces for dedicated training programs.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end experience section-->
+
+                <!-- start experience section-->
+                <div class="timeline">
+                  <div class="icon"></div>
+                  <div class="date-content">
+                    <div class="date-outer">
+                      <span class="date">
+                        <span class="month">1 Year</span>
+                        <span class="year">2016</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="timeline-content">
+                    <h5 class="title">Technical Support Specialist</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="description list-group-item">
+                        Educated, trained, and guide clients on the complete usage of their Clover Device (Fiserv
+                        Product).
+                      </li>
+                      <li class="description list-group-item">
+                        Provided technical support to all merchants or sale consultants that needed on-phone assistance
+                        to
+                        troubleshoot their device.
+                      </li>
+                      <li class="description list-group-item">
+                        Used Salesforce CRM to track, resolve, and document help tickets.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end experience section-->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+              <div class="main-timeline">
+                <!-- start experience section-->
+                <div class="timeline">
+                  <div class="icon"></div>
+                  <div class="date-content">
+                    <div class="date-outer">
+                      <span class="date">
+                        <span class="month">7 Months</span>
+                        <span class="year">2020</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="timeline-content">
+                    <h5 class="title">Front-end Web Development</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="description list-group-item">
+                        Treehouse, Tech-degree completed in 2021.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end experience section-->
+
+                <!-- start experience section-->
+                <div class="timeline">
+                  <div class="icon"></div>
+                  <div class="date-content">
+                    <div class="date-outer">
+                      <span class="date">
+                        <span class="month">4 Years</span>
+                        <span class="year">2017</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="timeline-content">
+                    <h5 class="title">Psychology</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="description list-group-item">
+                        Pontificia Universidad Católica Madre y Maestra (PUCMM), BA completed in 2020.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end experience section-->
+              </div>
+            </div>
+          </div>
+          <!--/experience and education-->
+
+          <!--skills-->
+          <div class="main-font">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="black" class="bi bi-tools"
+              viewBox="0 0 16 16">
+              <path
+                d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z" />
             </svg> Skills
           </div>
-          <ul class="list-group rounded">
-            <li class="list-group-item text-light bg-dark list-group-item-action"><strong>People
-                Management</strong></li>
-            <li class="list-group-item text-light bg-dark list-group-item-action"><strong>Employee
-                Training</strong></li>
-            <li class="list-group-item text-light bg-dark list-group-item-action"><strong>Detail
-                Oriented</strong></li>
-            <li class="list-group-item text-light bg-dark list-group-item-action"><strong>Solve
-                Rubic Cube</strong></li>
-            </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="pb-3">
-      <div class="about_skills main-font">
-        <div class="skills_item">
-          <h4>HTML</h4>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 95%"
-              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
-          </div>
-        </div>
-        <div class="skills_item">
-          <h4>CSS</h4>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 95%"
-              aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">95%</div>
-          </div>
-        </div>
-        <div class="skills_item">
-          <h4>JavaScript</h4>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 75%"
-              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/about-->
-
-    <!--projects-->
-    <div id="projects" class="main-font pb-1">
-      <div>
-        <svg aria-hidden="true" width="21" height="21" focusable="false" data-prefix="fas" data-icon="rocket" class="svg-inline--fa fa-rocket fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="black" d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path></svg> 
-        Projects
-      </div>
-      <div class="pb-3">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner border border-dark rounded">
-            <div class="carousel-item active">
-              <img src="./images/project_01.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/project_02.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/project_03.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/project_04.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/project_05.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/project_06.PNG" class="d-block w-100" alt="...">
+          <div class="container pb-3">
+            <div class="row row-cols-2">
+                <div class="col-lg-6  text-light bg-dark"><strong>People Management</strong></div>
+                <div class="col-lg-6 text-light bg-dark"><strong>People Management</strong></div>
+                <div class="col-lg-6 text-light bg-dark"><strong>People Management</strong></div>
+                <div class="col-lg-6 text-light bg-dark"><strong>People Management</strong></div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <!--/skills-->
+        </div>
+
+        <div class="pb-3">
+          <div class="about_skills main-font">
+            <div class="skills_item">
+              <h4>HTML</h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 95%"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+              </div>
+            </div>
+            <div class="skills_item">
+              <h4>CSS</h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 95%"
+                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">95%</div>
+              </div>
+            </div>
+            <div class="skills_item">
+              <h4>JavaScript</h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 75%"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/about-->
+
+        <!--projects-->
+        <div id="projects" class="main-font pb-1">
+          <div>
+            <svg aria-hidden="true" width="21" height="21" focusable="false" data-prefix="fas" data-icon="rocket"
+              class="svg-inline--fa fa-rocket fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path fill="black"
+                d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z">
+              </path>
+            </svg>
+            Projects
+          </div>
+          <div class="pb-3">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner border border-dark rounded">
+                <div class="carousel-item active">
+                  <img src="./images/project_01.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5> #1 Personal Profile Page</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/project_02.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5> #2 Online Registration Form</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/project_03.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5> #3 Interactive Photo Gallery</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/project_04.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5> #4 Game Show App</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/project_05.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5> #5 WebApp Dashboard</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/project_06.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5> #6 Employee Directory</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 Personal Profile Page
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                A personal online profile made with HTML and CSS. Click <a href="https://bbycobra.github.io/project_1/" target="_blank">Here</a> to view full working site!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Online Registration Form
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                A responsive, mobile-first registration form using a variety of HTML form elements. Click <a href="https://bbycobra.github.io/project_3/" target="_blank">Here</a> to view full working site!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Interactive Photo Gallery
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               A gallery created using HTML, CSS and JavaScript to provide an interactive site with search functionalities. Click <a href="https://bbycobra.github.io/project_5/" target="_blank">Here</a> to view full working site!             </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Game Show App
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              A browser version of “Wheel of Success”, a word guessing game. Javascript was used to come up with a random phrase that players will try to guess by entering different letters into the program. Click <a href="https://bbycobra.github.io/project_6/" target="_blank">Here</a> to view full working site!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFifth">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+              WebApp Dashboard
+            </button>
+          </h2>
+          <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              An interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. The project involves tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability. Click <a href="https://bbycobra.github.io/project_7/" target="_blank">Here</a> to view full working site!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSixth">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+              Employee Directory
+            </button>
+          </h2>
+          <div id="collapseSixth" class="accordion-collapse collapse" aria-labelledby="headingSixth" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              An employee directory created using JavaScript with a third-party API. Click <a href="https://bbycobra.github.io/project_8/" target="_blank">Here</a> to view full working site!</div>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/projects-->
+        <!--/projects-->
 
-  </div>
+      </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title secondary-font" id="exampleModalLabel">Contact Me</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="red" class="bi bi-asterisk" viewBox="0 0 16 16">
-                <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
-              </svg>
-              <input type="email" class="form-control" id="name" name="user_name" placeholder="Required" required>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title secondary-font" id="exampleModalLabel">Contact Me</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="red" class="bi bi-asterisk" viewBox="0 0 16 16">
-                <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
-              </svg>
-              <input type="email" class="form-control" id="email" name="user_email" aria-describedby="emailHelp" placeholder="Required" required>
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="red" class="bi bi-asterisk"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                  </svg>
+                  <input type="email" class="form-control" id="name" name="user_name" placeholder="Required" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="red" class="bi bi-asterisk"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                  </svg>
+                  <input type="email" class="form-control" id="email" name="user_email" aria-describedby="emailHelp"
+                    placeholder="Required" required>
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3 form-floating">
+                  <textarea class="form-control" id="message"></textarea>
+                  <label for="message" class="form-label"></label>
+                </div>
+              </form>
             </div>
-            <div class="mb-3 form-floating">
-              <textarea class="form-control" id="message"></textarea>
-              <label for="message" class="form-label"></label>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit</button>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
+          </div>
         </div>
       </div>
     </div>
