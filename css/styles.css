@@ -28,11 +28,16 @@ p,
     color: #fff;
     background-color: #212529;
 }
+footer a{
+    text-decoration: none;
+}
+
+
+
 /* TIMELINE */
 .main-timeline {
     position: relative
 }
-
 .main-timeline:before {
     content: "";
     display: block;
