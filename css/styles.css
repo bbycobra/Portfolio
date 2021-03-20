@@ -31,9 +31,38 @@ p,
 footer a{
     text-decoration: none;
 }
-
-
-
+.bi-bell{
+    fill: white;
+}
+.bi-bell:hover{
+    fill:slategray;
+    cursor: pointer;
+}
+.bi-circle-fill{
+    fill:green;
+    float: right;
+}
+.alert{
+    padding-right: 20px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-top: 10px;
+}
+.alert-dismissible .btn-close{
+    padding: 0px;
+    padding-right: 5px;
+    width: 10px;
+    top: 5px;
+}
+.hidden {
+    display: none;
+}
+#skills{
+    padding-right: 119px;
+    max-width: 3000px;
+}
 /* TIMELINE */
 .main-timeline {
     position: relative
