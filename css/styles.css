@@ -28,6 +28,13 @@ p,
     color: #fff;
     background-color: #212529;
 }
+.nav-link{
+    padding-top: 0;
+    padding-bottom: 3px;
+}
+.navbar{
+    padding: 0;
+}
 footer a{
     text-decoration: none;
 }
@@ -47,8 +54,8 @@ footer a{
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    margin: 0px;
     margin-top: 10px;
+    font-size: 14px;
 }
 .alert-dismissible .btn-close{
     padding: 0px;

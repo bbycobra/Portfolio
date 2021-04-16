@@ -6,7 +6,7 @@ animation_bell.addEventListener("click", function() {
     alert.classList.remove("hidden");
     alert.classList.add("show");
     animation_circle.classList.add("hidden")
-    console.log('Hi');
+    animation_bell.classList.add('hidden')
 });
 
 
